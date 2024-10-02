@@ -1,0 +1,103 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('./../img/grass_bg.png');
+  background-repeat: repeat;
+  background-size: 200px;
+}
+a.nav-link {
+  padding: 0px 10px 0px 10px;
+}
+
+li.nav-item {
+  margin: 0px 0px 3px 0px;
+}
+
+ul.nav {
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: 'Comic Sans MS', 'Verdana', sans-serif;  /* 90-luvun suosikit */
+  color: #000000;                        /* Musta teksti */
+  background-color: #AD4A48;             /* Maroon (tummanpunainen) tausta */
+  text-decoration: none;                 /* Poistetaan alleviivaus */
+  padding: 10px 15px;                    /* Sopiva tila linkin ympärille */
+  border: 3px solid #D2B48C;             /* Vaaleanruskea reunus (tiilimäinen) */
+  display: inline-block;                 /* Linkit laatikkotyyliin */
+  transition: background-color 0.3s, border-color 0.3s;  /* Pehmeä siirtymä hover-tilassa */
+  border-radius: 3px;                    /* Kevyt pyöristys kulmiin */
+}
+
+/* Hover-tila (kun hiiri on linkin päällä) */
+.nav-link:hover {
+  background-color: #660000;             /* Tummempi maroon hover-tilassa */
+  border-color: #A0522D;                 /* Tumma ruskea reunus hover-tilassa */
+  color: #D2B48C;
+}
+
+/* Aktiivinen linkki (klikkauksen jälkeen) */
+.nav-link:active {
+  background-color: #993333;             /* Aktiivisena hieman kirkkaampi tummanpunainen */
+  color: #FFFFFF;                        /* Valkoinen teksti aktiivisena */
+}
+
+
+a.nav-heading {
+  font-size: larger;
+  margin: 5px 0px 3px 0px;
+  background: initial;
+  border: 0px;
+}
+
+a.nav-heading:hover {
+  background-color: initial;             /* Tummempi maroon hover-tilassa */
+  color: #D2B48C;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  flex: 0 0 auto;
+  width: 250px;
+  overflow-y: auto;
+
+  background-image: url('./../img/brick_wall.png');
+  background-repeat: repeat;
+  background-size: 200px;
+}
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+}
+.content-overlay {
+  background-color: rgba(29, 128, 45, 0.65);
+  min-height: 100vh;
+  margin: 0;   
+}
+
+.content {
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 767.98px) {
+  .sidebar {
+      position: fixed;
+      top: 56px;
+      left: -250px;
+      height: calc(100% - 56px);
+      z-index: 1000;
+      transition: all 0.3s;
+  }
+  .sidebar.active {
+      left: 0;
+  }
+  .main-content {
+      margin-top: 56px;
+  }
+}

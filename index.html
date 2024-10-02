@@ -5,90 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Sidebar Template</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-image: url('./assets/img/grass_bg.png');
-            background-repeat: repeat;
-            background-size: 200px;
-        }
-        .wrapper {
-            display: flex;
-            height: 100vh;
-        }
-        .sidebar {
-            flex: 0 0 auto;
-            width: 250px;
-            overflow-y: auto;
-
-            background-image: url('./assets/img/brick_wall.png');
-            background-repeat: repeat;
-            background-size: 200px;
-        }
-        .main-content {
-            flex: 1;
-            overflow-y: auto;
-        }
-        .content-overlay {
-            background-color: rgba(29, 128, 45, 0.65);
-            min-height: 100vh;
-            margin: 0;   
-        }
-
-        .content {
-            padding: 20px;
-            border-radius: 10px;
-        }
-        @media (max-width: 767.98px) {
-            .sidebar {
-                position: fixed;
-                top: 56px;
-                left: -250px;
-                height: calc(100% - 56px);
-                z-index: 1000;
-                transition: all 0.3s;
-            }
-            .sidebar.active {
-                left: 0;
-            }
-            .main-content {
-                margin-top: 56px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
 </head>
 <body>
     <div class="wrapper">
-        <!-- Sidebar -->
+        <!-- Sidebar (loaded dynamically) -->
         <nav id="sidebar" class="sidebar">
-            <div class="position-sticky pt-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          <!-- Placeholder for the sidebar content -->
         </nav>
 
         <!-- Main content -->
@@ -105,8 +28,7 @@
 
             <div class="content-overlay">
                 <div class="content">
-                <h1>Welcome to Your Website</h1>
-                <p>This is the main content area. You can add your content here.</p>
+                
                 <!-- Add more content here as needed -->
             </div>
             </div>
@@ -119,5 +41,61 @@
             document.getElementById('sidebar').classList.toggle('active');
         });
     </script>
+     <script>
+      // Function to load external content using Fetch API
+      function loadPage(page) {
+          fetch(page)
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                  }
+                  return response.text();
+              })
+              .then(data => {
+                  document.querySelector('.content').innerHTML = data;
+              })
+              .catch(error => {
+                  document.querySelector('.content').innerHTML = '<p>Error loading content.</p>';
+                  console.error('There was a problem with the fetch operation:', error);
+              });
+      }
+
+      // Function to load the sidebar content dynamically
+      function loadSidebar() {
+          fetch('sidebar.html')
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                  }
+                  return response.text();
+              })
+              .then(data => {
+                  document.getElementById('sidebar').innerHTML = data;
+                  // Add event listeners to dynamically loaded sidebar links
+                  addNavEventListeners();
+              })
+              .catch(error => {
+                  document.getElementById('sidebar').innerHTML = '<p>Error loading sidebar.</p>';
+                  console.error('There was a problem with the fetch operation:', error);
+              });
+      }
+
+      // Function to add event listeners to navigation links
+      function addNavEventListeners() {
+          document.querySelectorAll('.nav-link').forEach(link => {
+              link.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const page = this.getAttribute('data-page');
+                  loadPage(page);
+              });
+          });
+      }
+
+      // Load the sidebar and default page on window load
+      window.onload = () => {
+          loadSidebar(); // Load the sidebar
+          loadPage('home.html'); // Load the home page by default
+      };
+  </script>
 </body>
 </html>
