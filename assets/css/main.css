@@ -108,6 +108,10 @@ h3 {
   color: darkred;
 }
 
+h4 {
+  font-weight: bold;
+}
+
 .main-content h1, .main-content h2 {
   text-align: center;
   color: darkred;
@@ -178,6 +182,63 @@ p, ul {
   animation: tarina 1.5s infinite; /* Kutsuu heiluu-animaatiota */
 }
 
+/* Kuvan tyylit */
+.retro-image-container {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center; /* Keskittää kuvatekstin kuvan alle */
+  float: left; /* Jatketaan kuvan vasemmanpuoleista kellutusta */
+  margin-right: 20px;
+}
+
+.retro-image {
+  display: block;
+  max-width: 400px;
+  border: 10px solid #9c951e;
+  padding: 5px;
+  background-color: #774711;
+  box-shadow: 5px 5px 0 #2a3636, 10px 10px 0 #4a454a;
+}
+
+/* Animaatio hover-tilassa */
+.retro-image:hover {
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+/* Kuvatekstin tyyli */
+figcaption {
+  font-size: 14px;
+  color: #313131; /* Hieman vaaleampi teksti */
+  margin-top: 5px;
+  clear: both; /* Estää kuvatekstiä kellumasta kuvan viereen */
+  display: block; /* Tekee kuvatekstistä loogisen osan */
+}
+
+.custom-hr {
+  display: flow-root;;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.custom-hr:before {
+  content: "\f076 \f076 \f076 \f076 \f076 \f076"; /* Font Awesome unicode for fa-magnet (kavion ikoni) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: darkred; /* Retro pinkki väri */
+  letter-spacing: 15px; /* Välit ikonien väliin */
+  
+}
+
+/* Hover-efekti kavioikoneille */
+.custom-hr:hover:before {
+  color: #FFFF00; /* Kirkas keltainen hover-tilassa */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
 /* Koko alue, jossa kaviot liikkuvat */
 .kavio-container {
   width: 100%;
@@ -201,6 +262,7 @@ p, ul {
 .kavio-2 {
   top: 60%;                  /* Sijoitetaan alemmas */
 }
+
 
 
 @keyframes tarina {
