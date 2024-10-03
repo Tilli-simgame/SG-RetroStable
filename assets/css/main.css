@@ -75,6 +75,7 @@ a.nav-heading:hover {
   flex: 1;
   overflow-y: auto;
 }
+
 .content-overlay {
   background-color: rgba(29, 128, 45, 0.65);
   min-height: 100vh;
@@ -85,6 +86,148 @@ a.nav-heading:hover {
   padding: 20px;
   border-radius: 10px;
 }
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.main-content h1, .main-content h2 {
+  text-align: center;
+  color: darkred;
+}
+
+.animate-firstletter {
+  font-size: 5rem;                /* Suuri fonttikoko */
+  font-weight: bold;              /* Lihavoitu */
+  display: inline-block;          /* Pitää alkukirjaimen erillään tekstistä */
+  animation: tarina 1.5s infinite; /* Kutsuu heiluu-animaatiota */
+}
+
+/* Koko alue, jossa kaviot liikkuvat */
+.kavio-container {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Kaviotyylit */
+.kavio {
+  font-size: 3rem;
+  position: absolute;
+  top: 30%;
+  color: #800000;            /* Maroon-väri */
+  transform: rotate(-90deg);  /* Käännetään ikonit 90 astetta */
+  opacity: 0;                /* Aluksi piilotettu */
+  transition: opacity 0.5s ease;  /* Lisää smooth opacity-animaatio */
+}
+
+/* Alempi kavio */
+.kavio-2 {
+  top: 60%;                  /* Sijoitetaan alemmas */
+}
+
+
+@keyframes tarina {
+  0% {
+      transform: translate(0, 0);  /* Lähtöasento */
+  }
+  10% {
+      transform: translate(-2px, 2px); /* Siirtyy hieman vasemmalle ja alas */
+  }
+  20% {
+      transform: translate(2px, -2px); /* Siirtyy hieman oikealle ja ylös */
+  }
+  30% {
+      transform: translate(-2px, -2px); /* Siirtyy hieman vasemmalle ja ylös */
+  }
+  40% {
+      transform: translate(2px, 2px);   /* Siirtyy hieman oikealle ja alas */
+  }
+  50% {
+      transform: translate(-2px, 0);    /* Siirtyy vasemmalle */
+  }
+  60% {
+      transform: translate(2px, 0);     /* Siirtyy oikealle */
+  }
+  70% {
+      transform: translate(-2px, 2px);  /* Siirtyy vasemmalle ja alas */
+  }
+  80% {
+      transform: translate(2px, -2px);  /* Siirtyy oikealle ja ylös */
+  }
+  90% {
+      transform: translate(-2px, -2px); /* Siirtyy vasemmalle ja ylös */
+  }
+  100% {
+      transform: translate(0, 0);       /* Palaa lähtöasentoon */
+  }
+}
+
+@keyframes heiluu {
+  0% {
+      transform: translateX(0);   /* Alkuasento (ei liikettä) */
+  }
+  50% {
+      transform: translateX(-10px); /* Liikkuu vasemmalle */
+  }
+  100% {
+      transform: translateX(10px);  /* Liikkuu oikealle */
+  }
+}
+
+@keyframes hyppii {
+  0% {
+      transform: translateY(0);   /* Lähtöasento, ei liikettä */
+  }
+  30% {
+      transform: translateY(-15px); /* Hyppy ylös */
+  }
+  50% {
+      transform: translateY(0);   /* Palaa alas */
+  }
+  70% {
+      transform: translateY(-8px);  /* Kevyt hyppy uudelleen */
+  }
+  100% {
+      transform: translateY(0);   /* Palaa alas */
+  }
+}
+
+@keyframes superpallo {
+  0% {
+      transform: translateY(0);    /* Lähtöasento, ei liikettä */
+  }
+  20% {
+      transform: translateY(-50px); /* Suuri hyppy ylös */
+  }
+  40% {
+      transform: translateY(0);    /* Palaa alas */
+  }
+  50% {
+      transform: translateY(-40px);  /* Toinen hyppy, pienempi */
+  }
+  70% {
+      transform: translateY(0);    /* Palaa alas */
+  }
+  80% {
+      transform: translateY(-20px);  /* Kolmas hyppy, vielä pienempi */
+  }
+  90% {
+      transform: translateY(0);    /* Palaa alas */
+  }
+  95% {
+      transform: translateY(-10px);  /* Viimeinen pieni hyppy */
+  }
+  100% {
+      transform: translateY(0);    /* Palaa alas */
+  }
+}
+
 @media (max-width: 767.98px) {
   .sidebar {
       position: fixed;
