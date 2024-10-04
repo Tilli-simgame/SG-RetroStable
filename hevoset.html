@@ -1,0 +1,263 @@
+<div>
+    <label for="breedFilter">Rotu:</label>
+    <select id="breedFilter" onchange="filterHorses()">
+        <option value="all">Kaikki</option>
+        <option value="suomenhevonen">Suomenhevonen</option>
+        <option value="shetlanninponi">Shetlanninponi</option>
+        <option value="puoliverinen">Puoliverinen</option>
+        <option value="islanninhevonen">Islanninhevonen</option>
+        <option value="irlannincob">Irlannincob</option>
+        <option value="new forest">New Forest</option>
+        <option value="connemara">Connemara</option>
+        <option value="ratsuponi">Ratsuponi</option>
+        <option value="norjanvuonohevonen">Norjanvuonohevonen</option>
+    </select>
+
+    <label for="sexFilter">Sukupuoli:</label>
+    <select id="sexFilter" onchange="filterHorses()">
+        <option value="all">Kaikki</option>
+        <option value="ruuna">Ruuna</option>
+        <option value="tamma">Tamma</option>
+        <option value="ori">Ori</option>
+    </select>
+
+    <label for="ageFilter">Ikä:</label>
+    <select id="ageFilter" onchange="filterHorses()">
+        <option value="all">Kaikki</option>
+        <option value="0-5">0-5 vuotta</option>
+        <option value="6-10">6-10 vuotta</option>
+        <option value="11-15">11-15 vuotta</option>
+    </select>
+
+    <button class="reset-button" onclick="resetFilters()">Tyhjennä haku</button>
+</div>
+
+
+<div class="horse-list">
+    <div class="horse-card" data-breed="suomenhevonen" data-sex="ruuna" data-age="8">
+        <img src="horse1.jpg" alt="Tuisku, suomenhevonen, 8v" class="horse-image">
+        <div>
+            <div class="horse-name">Tuisku</div>
+            <div class="horse-info">Suomenhevonen, 8v</div>
+            <div class="horse-special">Energinen ja esteillä rohkea, mutta kiltti ja rauhallinen hoidettaessa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="shetlanninponi" data-sex="tamma" data-age="12">
+        <img src="horse2.jpg" alt="Vilja, shetlanninponi, 12v" class="horse-image">
+        <div>
+            <div class="horse-name">Vilja</div>
+            <div class="horse-info">Shetlanninponi, 12v</div>
+            <div class="horse-special">Todellinen lasten ystävä, hieman itsepäinen mutta lempeä talutusratsastuksessa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="puoliverinen" data-sex="ori" data-age="10">
+        <img src="horse3.jpg" alt="Salama, puoliverinen (Zangersheide), 10v" class="horse-image">
+        <div>
+            <div class="horse-name">Salama</div>
+            <div class="horse-info">Puoliverinen (Zangersheide), 10v</div>
+            <div class="horse-special">Herkkä ja tarkkaavainen, vaatii kokeneen ratsastajan.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="islanninhevonen" data-sex="tamma" data-age="12">
+        <img src="horse4.jpg" alt="Minttu, islanninhevonen, 12v" class="horse-image">
+        <div>
+            <div class="horse-name">Minttu</div>
+            <div class="horse-info">Islanninhevonen, 12v</div>
+            <div class="horse-special">Lempeä ja varmajalkainen, loistava vaelluksilla ja tölttiharjoituksissa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="irlannincob" data-sex="ruuna" data-age="9">
+        <img src="horse5.jpg" alt="Tarmo, irlannincob, 9v" class="horse-image">
+        <div>
+            <div class="horse-name">Tarmo</div>
+            <div class="horse-info">Irlannincob, 9v</div>
+            <div class="horse-special">Tasainen ja energinen esteillä, hyvä kenttäratsastuksessa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="new forest" data-sex="tamma" data-age="7">
+        <img src="horse6.jpg" alt="Hilla, New Forest, 7v" class="horse-image">
+        <div>
+            <div class="horse-name">Hilla</div>
+            <div class="horse-info">New Forest, 7v</div>
+            <div class="horse-special">Energinen ja kiltti esteratsu, joka sopii monenlaisille ratsastajille.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="suomenhevonen" data-sex="tamma" data-age="6">
+        <img src="horse7.jpg" alt="Lumikki, suomenpienhevonen, 6v" class="horse-image">
+        <div>
+            <div class="horse-name">Lumikki</div>
+            <div class="horse-info">Suomenpienhevonen, 6v</div>
+            <div class="horse-special">Nuori ja innokas, mutta vaatii rauhallisen käsittelijän.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="shetlanninponi" data-sex="ruuna" data-age="14">
+        <img src="horse8.jpg" alt="Herkku, shetlanninponi, 14v" class="horse-image">
+        <div>
+            <div class="horse-name">Herkku</div>
+            <div class="horse-info">Shetlanninponi, 14v</div>
+            <div class="horse-special">Luotettava lasten poni, jolla on pilke silmäkulmassa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="connemara" data-sex="ruuna" data-age="11">
+        <img src="horse9.jpg" alt="Vikke, connemara, 11v" class="horse-image">
+        <div>
+            <div class="horse-name">Vikke</div>
+            <div class="horse-info">Connemara, 11v</div>
+            <div class="horse-special">Iloinen ja menevä poni, joka rakastaa maastoilua ja esteitä.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="puoliverinen" data-sex="tamma" data-age="9">
+        <img src="horse10.jpg" alt="Jade, puoliverinen (Belgian puoliverinen), 9v" class="horse-image">
+        <div>
+            <div class="horse-name">Jade</div>
+            <div class="horse-info">Puoliverinen (Belgian puoliverinen), 9v</div>
+            <div class="horse-special">Herkkä tamma, joka palkitsee selkeistä avuista kouluratsastuksessa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="norjanvuonohevonen" data-sex="tamma" data-age="10">
+        <img src="horse11.jpg" alt="Ruska, norjanvuonohevonen, 10v" class="horse-image">
+        <div>
+            <div class="horse-name">Ruska</div>
+            <div class="horse-info">Norjanvuonohevonen, 10v</div>
+            <div class="horse-special">Rauhallinen ja tasainen, täydellinen maastoon ja aloittelijoille.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="ratsuponi" data-sex="ruuna" data-age="8">
+        <img src="horse12.jpg" alt="Noppa, ratsuponi, 8v" class="horse-image">
+        <div>
+            <div class="horse-name">Noppa</div>
+            <div class="horse-info">Ratsuponi, 8v</div>
+            <div class="horse-special">Monipuolinen ja energinen poni, joka loistaa kenttäradoilla.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="suomenhevonen" data-sex="ruuna" data-age="10">
+        <img src="horse13.jpg" alt="Pihka, suomenhevonen, 10v" class="horse-image">
+        <div>
+            <div class="horse-name">Pihka</div>
+            <div class="horse-info">Suomenhevonen, 10v</div>
+            <div class="horse-special">Rauhallinen ja tarkka ratsu, erityisen hyvä kouluratsastuksessa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="new forest" data-sex="ruuna" data-age="6">
+        <img src="horse14.jpg" alt="Toivo, new forest, 6v" class="horse-image">
+        <div>
+            <div class="horse-name">Toivo</div>
+            <div class="horse-info">New Forest, 6v</div>
+            <div class="horse-special">Utelias ja innokas oppimaan, toimii sekä esteillä että koulussa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="islanninhevonen" data-sex="tamma" data-age="15">
+        <img src="horse15.jpg" alt="Sani, islanninhevonen, 15v" class="horse-image">
+        <div>
+            <div class="horse-name">Sani</div>
+            <div class="horse-info">Islanninhevonen, 15v</div>
+            <div class="horse-special">Rauhallinen vaellusratsu, rakastaa pitkiä maastoreissuja.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="irlannincob" data-sex="ruuna" data-age="12">
+        <img src="horse16.jpg" alt="Veeti, irlannincob, 12v" class="horse-image">
+        <div>
+            <div class="horse-name">Veeti</div>
+            <div class="horse-info">Irlannincob, 12v</div>
+            <div class="horse-special">Vankka ja lempeä maastoratsu, sopii rauhallisille ratsastajille.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="ratsuponi" data-sex="tamma" data-age="9">
+        <img src="horse17.jpg" alt="Pipsa, ratsuponi, 9v" class="horse-image">
+        <div>
+            <div class="horse-name">Pipsa</div>
+            <div class="horse-info">Ratsuponi, 9v</div>
+            <div class="horse-special">Kiltti ja innokas poni, joka toimii niin koulussa kuin esteillä.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="suomenhevonen" data-sex="ruuna" data-age="11">
+        <img src="horse18.jpg" alt="Rolle, suomenhevonen, 11v" class="horse-image">
+        <div>
+            <div class="horse-name">Rolle</div>
+            <div class="horse-info">Suomenhevonen, 11v</div>
+            <div class="horse-special">Rohkea esteratsu, joka toimii hyvin myös maastossa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="connemara" data-sex="tamma" data-age="7">
+        <img src="horse19.jpg" alt="Sade, connemara, 7v" class="horse-image">
+        <div>
+            <div class="horse-name">Sade</div>
+            <div class="horse-info">Connemara, 7v</div>
+            <div class="horse-special">Rauhallinen ja tasainen poni, erityisen hyvä nuorten ratsastajien kouluratsastuksessa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="norjanvuonohevonen" data-sex="tamma" data-age="14">
+        <img src="horse20.jpg" alt="Kiira, norjanvuonohevonen, 14v" class="horse-image">
+        <div>
+            <div class="horse-name">Kiira</div>
+            <div class="horse-info">Norjanvuonohevonen, 14v</div>
+            <div class="horse-special">Lempeä ja luotettava maastoratsu, erityisen sopiva alkeistunneille ja pitkille maastoretkille.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card"data-breed="puoliverinen" data-sex="ori" data-age="8">
+        <img src="horse21.jpg" alt="Uljas, puoliverinen (Westfalen), 8v" class="horse-image">
+        <div>
+            <div class="horse-name">Uljas</div>
+            <div class="horse-info">Puoliverinen (Westfalen), 8v</div>
+            <div class="horse-special">Haastava, mutta osaava kenttäratsu, joka loistaa edistyneillä ratsastajilla.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="suomenhevonen" data-sex="ruuna" data-age="13">
+        <img src="horse22.jpg" alt="Ruuti, suomenhevonen, 13v" class="horse-image">
+        <div>
+            <div class="horse-name">Ruuti</div>
+            <div class="horse-info">Suomenhevonen, 13v</div>
+            <div class="horse-special">Ystävällinen ja innokas, toimii hyvin koulu- ja estekisoissa.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="connemara" data-sex="tamma" data-age="10">
+        <img src="horse23.jpg" alt="Frida, connemara, 10v" class="horse-image">
+        <div>
+            <div class="horse-name">Frida</div>
+            <div class="horse-info">Connemara, 10v</div>
+            <div class="horse-special">Rohkea ja reipas poni, hyvä niin koulussa kuin maastoesteillä.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="new forest" data-sex="ruuna" data-age="9">
+        <img src="horse24.jpg" alt="Oliver, new forest, 9v" class="horse-image">
+        <div>
+            <div class="horse-name">Oliver</div>
+            <div class="horse-info">New Forest, 9v</div>
+            <div class="horse-special">Energinen poni, joka rakastaa esteitä ja maastossa ratsastamista.</div>
+        </div>
+    </div>
+    
+    <div class="horse-card" data-breed="ratsuponi" data-sex="tamma" data-age="6">
+        <img src="horse25.jpg" alt="Aada, ratsuponi, 6v" class="horse-image">
+        <div>
+            <div class="horse-name">Aada</div>
+            <div class="horse-info">Ratsuponi, 6v</div>
+            <div class="horse-special">Hellä ja kärsivällinen, täydellinen aloitteleville ratsastajille.</div>
+        </div>
+    </div>
+</div>
+
+<p id="error-message" class="error-message">Ei löytynyt hevosia annetuilla kriteereillä.</p>

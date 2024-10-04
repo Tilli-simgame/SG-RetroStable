@@ -1,0 +1,37 @@
+{
+    "official_name": "Tuisku",
+    "nickname": "Tuisku",
+    "sex": "Ruuna",
+    "birthdate": "2015-04-15",
+    "age": "8",
+    "breed": "Suomenhevonen",
+    "description": "Energinen ja esteillä rohkea, mutta kiltti ja rauhallinen hoidettaessa. Tuisku rakastaa pitkän matkan vaelluksia ja on erityisen taitava esteillä.",
+    "pedigree": {
+        "father": "Isä",
+        "mother": "Emä",
+        "father_father": "Isänisä",
+        "father_mother": "Isänemä",
+        "mother_father": "Emänisä",
+        "mother_mother": "Emänemä"
+    },
+    "competition_calendar": [
+        {
+            "date": "2024-01-12",
+            "class": "Esteratsastus 100 cm",
+            "placement": "1."
+        },
+        {
+            "date": "2024-02-05",
+            "class": "Kouluratsastus Helppo B",
+            "placement": "2."
+        }
+    ],
+    "gallery": [
+        "tuisku1.jpeg",
+        "tuisku1.jpeg",
+        "tuisku1.jpeg",
+        "tuisku1.jpeg",
+        "tuisku1.jpeg",
+        "tuisku1.jpeg"
+    ]
+}
