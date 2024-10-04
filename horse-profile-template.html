@@ -1,55 +1,69 @@
 <div class="profile-content">
     <h1 id="nickname">[Kutsumanimi]</h1>
     <div class="profile-info">
-        <img id="profile-image" src="" alt="Hevosen kuva" height="300px" />
+        <figure>
+            <img id="profile-image" src="" alt="Hevosen kuva" height="300px" />
+            <figcaption><span id="profile-image-copy">[Tekijänoikeudet]</span></figcaption>
+        </figure>
         <div class="profile-details">
             <p><strong>Virallinen nimi:</strong> <span id="official-name">[Virallinen Nimi]</span></p>
             <p><strong>Kutsumanimi:</strong> <span id="nickname-text">[Kutsumanimi]</span></p>
             <p><strong>Sukupuoli:</strong> <span id="sex">[Sukupuoli]</span></p>
             <p><strong>Syntymäaika:</strong> <span id="birthdate">[Syntymäaika]</span> (<span id="age">[Ikä]</span>)</p>
             <p><strong>Rotu:</strong> <span id="breed">[Rotu]</span></p>
+            <p><strong>Suku:</strong> <span id="father"></span> x <span id="mother"></span></p>
+            <p><strong>Lyhyesti:</strong> <span id="description">[Lyhyesti]</span></p>
         </div>
     </div>
+
+    <h2>Historia</h2>
+    <div id="history-description">
+        <!-- Historia lisätään tähän -->
+    </div>
+
+    <div class="custom-hr-heart"></div>
 
     <h2>Kuvagalleria</h2>
     <div class="gallery" id="gallery">
         <!-- Kuvagalleria lisätään tähän -->
     </div>
 
-    <h2>Luonnekuvaus</h2>
-    <div class="long-description">
-        <p id="description">[Luonnekuvaus]</p>
+    <!-- Modaalin rakenne Bootstrapilla -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
+            </div>
+            <div class="modal-body">
+            <img class="modal-image img-fluid" id="modalImage" alt="Kuva">
+            <div class="modal-caption text-center mt-2" id="modalCaption">Kuvateksti tähän</div>
+            </div>
+        </div>
+        </div>
     </div>
 
-    <h2>Sukutaulu</h2>
-    <div class="pedigree">
-        <table>
-            <tr>
-                <td colspan="2" id="father">[Isä]</td>
-                <td colspan="2" id="mother">[Emä]</td>
-            </tr>
-            <tr>
-                <td id="father-father">[Isänisä]</td>
-                <td id="father-mother">[Isänemä]</td>
-                <td id="mother-father">[Emänisä]</td>
-                <td id="mother-mother">[Emänemä]</td>
-            </tr>
-        </table>
+    <h2>Luonnekuvaus</h2>
+    <div class="long-description">
+        <div id="temperament-description">
+            <!-- Luonnekuvaus kappaleittain lisätään tähän JavaScriptillä -->
+        </div>
     </div>
+
+    <div class="custom-hr-heart"></div>
 
     <h2>Kilpailukalenteri</h2>
     <div class="competition-calendar">
-        <table>
-            <thead>
-                <tr>
-                    <th>Päivämäärä</th>
-                    <th>Luokka</th>
-                    <th>Sijoitus</th>
-                </tr>
-            </thead>
-            <tbody id="competition-calendar">
-                <!-- Kilpailut lisätään tähän -->
-            </tbody>
-        </table>
+        <div class="competition-header">
+            <div class="header-cell">Päivämäärä</div>
+            <div class="header-cell">Luokka</div>
+            <div class="header-cell">Paikka</div>
+            <div class="header-cell">Sijoitus</div>
+        </div>
+        <div id="competition-calendar">
+            <!-- Kilpailut lisätään tähän JS:llä -->
+        </div>
     </div>
+
+
 </div>

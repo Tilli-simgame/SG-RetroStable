@@ -239,6 +239,92 @@ figcaption {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.custom-hr-heart {
+  display: flow-root;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  margin: 15px 0 15px 0;
+}
+
+.custom-hr-heart:before {
+  content: "\f004 \f004 \f004 \f004 \f004 \f004"; /* Font Awesome unicode for fa-heart (sydänikoni) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: pink; /* Tummanpunainen väri */
+  letter-spacing: 15px; /* Väli ikonien välillä */
+  animation: heartbeat 4s infinite;
+  display: inline-block;
+}
+
+/* Sykkivä animaatio */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1); /* Normaali koko */
+  }
+  25% {
+    transform: scale(1.1); /* Kasvaa hieman */
+  }
+  50% {
+    transform: scale(0.9); /* Pienenee hieman */
+  }
+  75% {
+    transform: scale(1.1); /* Kasvaa takaisin */
+  }
+}
+
+.competition-calendar {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #774711;
+  background-color: #ffebcd;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Retro tyyppinen varjo */
+  margin: 20px 0;
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace; /* Retro fontti */
+}
+
+.competition-header, .competition-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 saraketta, kukin yhtä leveä */
+  padding: 10px 0;
+  border-bottom: 1px solid #774711;
+}
+
+.header-cell {
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #774711;
+  padding: 10px;
+}
+
+.competition-row {
+  background-color: #fff;
+  padding: 10px;
+  font-size: .9rem;
+}
+
+.competition-row:nth-child(odd) {
+  background-color: #f7f7f7; /* Vuorotteleva taustaväri */
+}
+
+.competition-row .cell {
+  padding: 8px;
+}
+
+/* Hover-efekti kilpailuriveille */
+.competition-row:hover {
+  background-color: #ffe4b5;
+  transition: background-color 0.3s ease;
+}
+
+.competition-row .cell:nth-child(4) {
+  text-align: center;
+}
+
+
 .schedule {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -344,6 +430,53 @@ figcaption {
   background-color: #e03e00;
 }
 
+/* Flexbox layout for profile */
+.profile-info {
+  display: flex;
+  align-items: center; /* Vertikaalinen keskitys */
+  gap: 20px; /* Välit kuvan ja tekstin välillä */
+  height: 100%;
+}
+
+.profile-info figure {
+  display: inline-block;
+  position: relative;
+  max-width: 300px;
+  margin: 0;
+  padding: 15px;
+  background-color: #fff;
+  border: 10px solid white; /* Polaroid-tyylinen valkoinen reunus */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Syvä varjo */
+  transform: rotate(0deg); /* Hieman vinossa oleva kuva */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-info figure:hover {
+  transform: rotate(-3deg); /* Oikaisee kuvan hover-tilassa */
+}
+
+#profile-image {
+  width: 100%;
+  height: auto;
+}
+
+.profile-info figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-details {
+  max-width: 400px; /* Tekstin leveys */
+}
+
+.profile-details p {
+  margin: 8px 0;
+}
+
+
 
 .gallery {
   display: flex;
@@ -351,47 +484,65 @@ figcaption {
   justify-content: center;
   padding: 10px;
   background-color: #ffebcd;
-  border: 5px solid #774711;
-  box-shadow: 5px 5px 0 #2a3636, 10px 10px 0 #4a454a;
+  border: 2px solid #774711;
+  margin-bottom: 20px;
 }
 
 .gallery figure {
   margin: 10px;
   text-align: center;
+  width: 135px;
 }
 
 .gallery img {
   width: 150px;
   height: auto;
-  margin-bottom: 5px;
   background-color: #ffffff;
-  padding: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: inherit;
 }
 
 /* Jokainen pariton kuva kääntyy vasemmalle */
-.gallery img:nth-child(odd) {
+.gallery figure:nth-child(odd) {
   transform: rotate(-5deg) scale(0.95);
 }
 
 /* Jokainen parillinen kuva kääntyy oikealle */
-.gallery img:nth-child(even) {
+.gallery figure:nth-child(even) {
   transform: rotate(5deg) scale(0.95);
 }
 
-.gallery img:hover {
-  transform: rotate(0deg) scale(3.5); /* Normaali asento ja suurempi koko hover-tilassa */
-  box-shadow: 10px 10px 0 #2a3636;
-  z-index: 99;
+.gallery figcaption {
+  font-size: .5rem;
+  color: #774711;
+  background-color: #ffffff;
+  padding: 3px;
+  margin: 0;
 }
 
-.gallery figcaption {
-  font-size: 14px;
-  color: #774711;
-  background-color: #fff8dc;
-  padding: 3px;
-  border-top: 2px solid #ffb6c1;
-  box-shadow: 3px 3px 0 #2a3636;
+.modal-content {
+  border: 10px solid white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Polaroid shadow */
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-caption {
+  font-family: 'Courier New', Courier, monospace; /* Retro-style font */
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.modal-header {
+  border: initial;
 }
 
 

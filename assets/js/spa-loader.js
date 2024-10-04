@@ -91,7 +91,8 @@ function loadHorseProfile(jsonFile) {
         .then(data => {
             // Fill the HTML template with JSON data
             document.getElementById('nickname').textContent = data.nickname;
-            document.getElementById('profile-image').src = 'animals/horses/' + data.gallery[0];
+            document.getElementById('profile-image').src = 'animals/horses/' + data.gallery[0].filename;
+            document.getElementById('profile-image-copy').textContent = data.gallery[0].copyright;
             document.getElementById('official-name').textContent = data.official_name;
             document.getElementById('nickname-text').textContent = data.nickname;
             document.getElementById('sex').textContent = data.sex;
@@ -103,27 +104,100 @@ function loadHorseProfile(jsonFile) {
             // Fill pedigree
             document.getElementById('father').textContent = data.pedigree.father;
             document.getElementById('mother').textContent = data.pedigree.mother;
-            document.getElementById('father-father').textContent = data.pedigree.father_father;
-            document.getElementById('father-mother').textContent = data.pedigree.father_mother;
-            document.getElementById('mother-father').textContent = data.pedigree.mother_father;
-            document.getElementById('mother-mother').textContent = data.pedigree.mother_mother;
+
 
             // Fill competition calendar
             const calendar = document.getElementById('competition-calendar');
             data.competition_calendar.forEach(event => {
-                const row = document.createElement('tr');
-                row.innerHTML = `<td>${event.date}</td><td>${event.class}</td><td>${event.placement}</td>`;
+                const row = document.createElement('div');
+                row.classList.add('competition-row');
+                
+                const dateCell = document.createElement('div');
+                dateCell.classList.add('cell');
+                dateCell.textContent = event.date;
+
+                const classCell = document.createElement('div');
+                classCell.classList.add('cell');
+                classCell.textContent = event.class;
+
+                const placeCell = document.createElement('div');
+                placeCell.classList.add('cell');
+                placeCell.textContent = event.place;
+
+                const placementCell = document.createElement('div');
+                placementCell.classList.add('cell');
+                placementCell.textContent = event.placement;
+
+                // Append cells to row
+                row.appendChild(dateCell);
+                row.appendChild(classCell);
+                row.appendChild(placeCell);
+                row.appendChild(placementCell);
+
+                // Append row to calendar
                 calendar.appendChild(row);
+            });
+
+            // Haetaan elementti, johon luonnekuvaus lisätään
+            const temperamentContainer = document.getElementById('temperament-description');
+
+            // Lisätään jokainen kappale erikseen
+            data.temperament.forEach(paragraph => {
+                const p = document.createElement('p');
+                p.textContent = paragraph;
+                temperamentContainer.appendChild(p);
+            });
+
+            // Haetaan elementti, johon historia lisätään
+            const historyContainer = document.getElementById('history-description');
+
+            // Lisätään jokainen kappale erikseen
+            data.history.forEach(paragraph => {
+                const p = document.createElement('p');
+                p.textContent = paragraph;
+                historyContainer.appendChild(p);
             });
 
             // Fill gallery
             const gallery = document.getElementById('gallery');
+            // Käydään läpi kaikki kuvat ja lisätään metatiedot
             data.gallery.forEach(image => {
+                // Luodaan figure-elementti
+                const figure = document.createElement('figure');
+
+                // Luodaan kuva-elementti
                 const img = document.createElement('img');
-                img.src = 'animals/horses/' + image;
-                img.alt = data.nickname;
-                gallery.appendChild(img);
+                img.src = 'animals/horses/' + image.filename;
+                img.alt = image.alt;
+                img.classList.add('img-thumbnail');
+
+                // Lisätään onclick-funktio kuvalle modaalin avaamista varten
+                img.onclick = function() {
+                    const modalImage = document.getElementById("modalImage");
+                    const modalCaption = document.getElementById("modalCaption");
+
+                    // Asetetaan modaalissa näytettävät kuvan tiedot
+                    modalImage.src = this.src;
+                    modalCaption.innerHTML = `<p>${image.description}</p><p>${image.copyright}</p>`;
+
+                    // Näytetään Bootstrapin modaali
+                    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                    modal.show();
+                };
+
+                // Luodaan figcaption kuvatekstiä varten
+                const figcaption = document.createElement('figcaption');
+                figcaption.textContent = `${image.alt} - ${image.copyright}`;
+
+                // Liitetään kuva ja kuvateksti figureen
+                figure.appendChild(img);
+                figure.appendChild(figcaption);
+
+                // Lisätään figure galleriaan
+                gallery.appendChild(figure);
             });
+
+            
         })
         .catch(error => {
             document.querySelector('.content').innerHTML = '<p>Virhe ladattaessa hevosen profiilia. Tietoja ei löytynyt.</p>';
