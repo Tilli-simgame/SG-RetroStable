@@ -197,12 +197,29 @@ function loadHorseProfile(jsonFile) {
                 gallery.appendChild(figure);
             });
 
+            // Now, insert the Utterances script dynamically
+            addUtterancesComments(data.nickname);  // Pass the nickname or other unique identifier
+
             
         })
         .catch(error => {
             document.querySelector('.content').innerHTML = '<p>Virhe ladattaessa hevosen profiilia. Tietoja ei löytynyt.</p>';
             console.error('Ongelma JSON-latauksessa:', error);
         });
+}
+
+// Function to dynamically add Utterances script
+function addUtterancesComments(issueTerm) {
+    const script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.async = true;
+    script.setAttribute('repo', 'Tilli-simgame/SG-RetroStable-Diaries');
+    script.setAttribute('issue-term', issueTerm);  // Dynamically set the issue-term based on the horse's nickname
+    script.setAttribute('theme', 'github-light');
+    script.crossorigin = 'anonymous';
+
+    // Append the script to a suitable place in your HTML, e.g., at the end of the content div
+    document.querySelector('.content').appendChild(script);
 }
 
 

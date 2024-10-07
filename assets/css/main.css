@@ -182,6 +182,105 @@ p, ul {
   animation: tarina 1.5s infinite; /* Kutsuu heiluu-animaatiota */
 }
 
+.animate-firstletter-beat {
+  font-size: 5rem;
+  font-weight: bold;
+  display: inline-block;
+  animation: beat 1.5s infinite;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Suurempi koko */
+  }
+}
+
+.animate-firstletter-shiny {
+  font-size: 5rem;
+  font-weight: bold;
+  display: inline-block;
+  animation: shiny 2.5s infinite;
+}
+
+@keyframes shiny {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 0.6;
+    transform: translateX(-10px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateX(10px);
+  }
+  75% {
+    opacity: 0.6;
+    transform: translateX(-5px);
+  }
+}
+
+/* Container for the entire list */
+.caretaker-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 8 columns for the header and rows */
+  gap: 10px;
+  background-color: #faf3e0;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles */
+.caretaker-list .header {
+  background-color: #b22222;
+  color: white;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Cell styles for data */
+.caretaker-list .cell {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Link styles inside cells */
+.caretaker-list .cell a {
+  color: #b22222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effect for links */
+.caretaker-list .cell a:hover {
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+/* Row hover effect */
+.caretaker-list .cell:hover {
+  background-color: #ffe4b5;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .caretaker-list {
+      grid-template-columns: 1fr;
+  }
+  .header {
+      text-align: left;
+  }
+}
+
 /* Kuvan tyylit */
 .retro-image-container {
   display: inline-block;
