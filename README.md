@@ -1,2 +1,2 @@
-# SG-RetroStable
-Tammilehdon Ratsukeskus
+# Tammilehdon Ratsastuskeskus
+Tervetuloa Tammilehdon Ratastuskeskuksen GitHub repoon :)!
