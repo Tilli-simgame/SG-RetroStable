@@ -1,2 +1,2 @@
-# Tammilehdon Ratsastuskeskus
-Tervetuloa Tammilehdon Ratastuskeskuksen GitHub repoon :)!
+# Lehmuskartanoon Ratsastuskeskus
+Tervetuloa Lehmuskartanoon Ratastuskeskuksen GitHub repoon :)!
