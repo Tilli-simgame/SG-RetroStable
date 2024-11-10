@@ -94,6 +94,7 @@ function loadHorseProfile(jsonFile) {
             document.getElementById('profile-image').src = 'animals/horses/' + data.gallery[0].filename;
             document.getElementById('profile-image-copy').textContent = data.gallery[0].copyright;
             document.getElementById('official-name').textContent = data.official_name;
+            document.getElementById('color').textContent = data.color;
             document.getElementById('nickname-text').textContent = data.nickname;
             document.getElementById('sex').textContent = data.sex;
             document.getElementById('birthdate').textContent = data.birthdate;

@@ -1,8 +1,9 @@
 {
-    "official_name": "Tuisku",
+    "official_name": "Tuiskutulinen",
     "nickname": "Tuisku",
     "sex": "Ruuna",
     "birthdate": "2015-04-15",
+    "color": "musta",
     "age": "8",
     "breed": "Suomenhevonen",
     "description": "Energinen ja esteillä rohkea, mutta kiltti ja rauhallinen hoidettaessa. Tuisku rakastaa pitkän matkan vaelluksia ja on erityisen taitava esteillä.",
@@ -23,8 +24,8 @@
         "Nykyään Tuisku on yksi Tammilehdon suosituimmista ratsuista. Se osallistuu säännöllisesti sekä koulu- että estetunneille ja on myös suosittu valinta pitkille maastovaelluksille. Tuiskusta on tullut monen ratsastajan luottoratsu, ja sen iloinen olemus ja monipuolisuus takaavat, että se tuo iloa kaikille, jotka sen selkään nousevat."
     ],
     "pedigree": {
-        "father": "Isä",
-        "mother": "Emä",
+        "father": "Keikarin Tahtituuri",
+        "mother": "Lumitarina",
         "father_father": "Isänisä",
         "father_mother": "Isänemä",
         "mother_father": "Emänisä",
@@ -32,60 +33,42 @@
     },
     "competition_calendar": [
         {
-            "date": "2024-01-12",
+            "date": "2000-00-00",
             "class": "Esteratsastus / 100cm",
             "place": "Virtuaalitallin Nimi",
             "placement": "1."
-        },
-        {
-            "date": "2024-02-05",
-            "class": "Kouluratsastus / He B",
-            "place": "Virtuaalitallin Nimi",
-            "placement": "2."
-        },
-        {
-            "date": "2024-01-12",
-            "class": "Esteratsastus / 100cm",
-            "place": "Virtuaalitallin Nimi",
-            "placement": "1."
-        },
-        {
-            "date": "2024-02-05",
-            "class": "Kouluratsastus / He B",
-            "place": "Virtuaalitallin Nimi",
-            "placement": "2."
         }
     ],
     "gallery": [
         {
-            "filename": "tuisku1.jpeg",
-            "alt": "Laitumella",
+            "filename": "img/tuisku/tuisku-aikuinen-seisoo.jpg",
+            "alt": "Tuisku seisoo laitumella",
             "copyright": "© AI, Tammilehdon Ratsastuskeskus",
-            "description": "Tuisku juoksemassa laitumella kesäpäivänä."
+            "description": "Tuisku seisoo laitumella."
         },
         {
-            "filename": "tuisku1.jpeg",
-            "alt": "Hypätään esteen yli",
+            "filename": "img/tuisku/tuisku-varsa-seisoo.jpg",
+            "alt": "Tuiskun varsakuva",
             "copyright": "© AI, Tammilehdon Ratsastuskeskus",
-            "description": "Tuisku hyppää esteen yli kilpailuissa."
+            "description": "Tuiskun varsakuva"
         },
         {
-            "filename": "tuisku1.jpeg",
-            "alt": "Maastoilua",
+            "filename": "img/tuisku/tuisku-ratsastustunnilla.jpg",
+            "alt": "Ratsastustunnilla",
             "copyright": "© AI, Tammilehdon Ratsastuskeskus",
-            "description": "Tuisku nauttii maastovaelluksesta metsässä."
+            "description": "Tuisku ratsastustunnilla."
         },
         {
-            "filename": "tuisku1.jpeg",
-            "alt": "Hypätään esteen yli",
-            "copyright": "© AI, Tammilehdon Ratsastuskeskus",
-            "description": "Tuisku hyppää esteen yli kilpailuissa."
-        },
+          "filename": "img/tuisku/tuisku-ratsastustunnilla-02.jpg",
+          "alt": "Ratsastustunnilla",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Tuisku ratsastustunnilla."
+      },
         {
-            "filename": "tuisku1.jpeg",
-            "alt": "Maastoilua",
+            "filename": "img/tuisku/tuiskun-paakuva.jpg",
+            "alt": "Tuiskun pääkuva",
             "copyright": "© AI, Tammilehdon Ratsastuskeskus",
-            "description": "Tuisku nauttii maastovaelluksesta metsässä."
+            "description": "Tuiskun pääkuva."
         }
     ]
 }

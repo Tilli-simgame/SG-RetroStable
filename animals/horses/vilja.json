@@ -1,0 +1,66 @@
+{
+  "official_name": "Kukkakummun Vilja",
+  "nickname": "Vilja",
+  "sex": "Ruuna",
+  "birthdate": "2018-05-22",
+  "color": "rautias",
+  "age": "5",
+  "breed": "Shetlanninponi",
+  "description": "Pieni mutta persoonallinen shetlanninponi, joka on erinomainen alkeisopetuksessa ja lasten tunneilla. Vilja on rauhallinen ja kärsivällinen opettaja, mutta osaa myös näyttää luonnetta kun sitä tarvitaan.",
+  "temperament": [
+      "Vilja on hurmaava shetlanninponiruuna, joka ihastuttaa jokaista tapaamaansa ihmistä söpöllä olemuksellaan ja rauhallisella luonteellaan. Tämä vuonna 2018 syntynyt poni on kehittynyt tasapainoiseksi ja luotettavaksi opetusponiksi, joka sopii erinomaisesti erityisesti nuorimmille ratsastajille. Viljassa yhdistyvät tyypillinen shetlanninponin älykkyys ja pieni jekuttelu, mutta pohjimmiltaan se on hyvin kiltti ja yhteistyöhaluinen.",
+      "Yleisesti: Vilja on luonteeltaan lempeä ja ystävällinen poni, joka tulee toimeen kaikkien kanssa. Se on erityisen hellävarainen pienten lasten kanssa, mutta osaa myös pitää puolensa laumassa. Viljalla on kuitenkin myös tyypillinen shetlanninponin oveluus - se tietää tarkalleen, milloin voi kokeilla rajoja ja milloin pitää olla esimerkillisen kiltti. Tämä tekee siitä myös erinomaisen opettajan, sillä se opettaa ratsastajilleen johdonmukaisuuden ja selkeiden apujen tärkeyden.",
+      "Ratsailla: Vilja on erinomainen alkeisopetusponi. Se liikkuu rauhallisesti ja tasaisesti, reagoi hyvin apuihin ja on erittäin kärsivällinen uusien ratsastajien kanssa. Vilja osaa perusaskellajit hyvin ja on erityisen taitava käynnissä ja ravissa. Laukassa se on hieman temperamenttisempi, mutta silti hyvin hallittavissa. Vaikka Vilja on ensisijaisesti opetusponi, se nauttii myös pienistä esteistä ja maastolenkeistä. Se on varmajalkainen maastossa ja kulkee mielellään jonossa muiden ponien kanssa.",
+      "Hoidettaessa: Vilja on todellinen unelma hoitaa. Se seisoo kärsivällisesti paikallaan harjatessa ja varustettaessa, eikä häiriinny ympärillä tapahtuvista asioista. Viljan kanssa on helppo opetella hevosenhoidon perusteita, sillä se antaa käsitellä itseään joka puolelta ja nostaa jalkojaankin kiltisti. Se nauttii erityisesti harjaamisesta ja rapsuttelusta, ja osoittaa kiitollisuutensa usein hellillä töytäisyillä. Eläinlääkärin ja kengittäjän käsittelyssä Vilja on esimerkillisen rauhallinen.",
+      "Kaiken kaikkiaan Vilja on täydellinen esimerkki siitä, miksi shetlanninponit ovat niin rakastettuja opetushevosia. Sen lempeä luonne, kärsivällisyys ja luotettavuus tekevät siitä ihanteellisen ensimmäisen ponin monelle nuorelle ratsastajalle. Samalla sen pieni pilke silmäkulmassa muistuttaa, että kyseessä on älykäs ja persoonallinen poni, joka osaa myös pitää hauskaa."
+  ],
+  "history": [
+      "Vilja syntyi pienellä shetlanninponeja kasvattavalla tilalla Etelä-Suomessa. Jo pienestä pitäen se osoitti erityistä kiinnostusta ihmisiä kohtaan ja oli varsoista se, joka tuli aina ensimmäisenä tervehtimään vierailijoita.",
+      "Varsa-aikansa Vilja vietti laumassa muiden shetlanninponivarsojen kanssa, missä se oppi tärkeitä sosiaalisia taitoja ja kehitti sitä tasapainoista luonnetta, josta se nykyään tunnetaan. Kasvattaja huomasi pian Viljan erityisen rauhallisen ja kärsivällisen luonteen, mikä sai hänet ajattelemaan, että Viljasta tulisi erinomainen opetusponi.",
+      "Viljan koulutus aloitettiin rauhallisesti ja johdonmukaisesti. Se oppi nopeasti perustaidot ja osoittautui erittäin yhteistyöhaluiseksi. Erityisesti Viljan kyky toimia pienten lasten kanssa kävi selväksi, kun kasvattajan omat lapset ja naapuruston nuorimmat alkoivat käydä hoitamassa sitä.",
+      "Tammilehdon Ratsastuskeskus etsi vuonna 2021 uutta luotettavaa ponia alkeisopetukseen, ja Vilja vaikutti täydelliseltä vaihtoehdolta. Koeratsastukset vahvistivat tämän - Vilja osoitti olevansa juuri niin rauhallinen ja luotettava kuin oli luvattu.",
+      "Tammilehdossa Vilja on löytänyt oman paikkansa lasten ja aloittelijoiden luottoponina. Se osallistuu säännöllisesti alkeistunneille ja on erityisen suosittu tallin pienimpien ratsastajien keskuudessa. Vilja on myös erinomainen poni talutusratsastuksessa ja ponipäivissä, missä sen kärsivällinen luonne pääsee todella oikeuksiinsa.",
+      "Nykyään Vilja on yksi Tammilehdon rakastetuimmista poneista. Sen lempeä luonne ja luotettavuus ovat tehneet siitä monen ensimmäisen ratsastuskokemuksen sankarin, ja monet nuoret ratsastajat ovat oppineet ratsastuksen perusteet juuri Viljan selässä."
+  ],
+  "pedigree": {
+      "father": "Kukkakummun Rusko",
+      "mother": "Helmenkalastajan Tyttö",
+      "father_father": "Skogsbackens Prince",
+      "father_mother": "Kukkakummun Rusina",
+      "mother_father": "Lillgårdens Tony",
+      "mother_mother": "Kukkakummun Tähti"
+  },
+  "competition_calendar": [],
+  "gallery": [
+      {
+          "filename": "img/vilja/vilja-seisoo-rakenne.jpg",
+          "alt": "Viljan rakennekuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Viljan rakennekuva."
+      },
+      {
+          "filename": "img/vilja/vilja-ratsastustunnilla.jpg",
+          "alt": "Vilja alkeistunnilla",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Vilja toimii kärsivällisesti alkeistunnilla."
+      },
+      {
+          "filename": "img/vilja/vilja-varsana.jpg",
+          "alt": "Vilja varsana",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Vilja pienenä varsana."
+      },
+      {
+          "filename": "img/vilja/vilja-rapsutus.jpg",
+          "alt": "Viljaa rapsutellaan",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Vilja nauttimassa rapsutuksista hoitopaikalla."
+      },
+      {
+          "filename": "img/vilja/vilja-paakuva.jpg",
+          "alt": "Viljan pääkuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Viljan virallinen pääkuva."
+      }
+  ]
+}

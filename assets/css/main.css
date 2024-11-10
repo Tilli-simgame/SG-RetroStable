@@ -84,7 +84,7 @@ a.nav-heading:hover {
 }
 
 .content-overlay {
-  background-color: rgba(29, 128, 45, 0.65);
+  background-color: rgba(29, 128, 45, 0.75);
   min-height: 100vh;
   margin: 0;   
 }
