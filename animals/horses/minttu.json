@@ -1,0 +1,67 @@
+{
+  "official_name": "Mynta frá Sauðárkróki",
+  "nickname": "Minttu",
+  "sex": "Tamma",
+  "birthdate": "2012-06-08",
+  "color": "ruunikko",
+  "age": "12",
+  "breed": "Islanninhevonen",
+  "description": "Lempeä ja varmajalkainen, loistava vaelluksilla ja tölttiharjoituksissa. Minttu on erityisen suosittu pitkillä maastoretkillä ja keskitason askellajitunneilla.",
+  "temperament": [
+      "Minttu on viehättävä islanninhevostamma, jonka lempeä luonne ja varmat askellajit tekevät siitä täydellisen kumppanin niin vaelluksille kuin askellajitunneille. Vuonna 2012 syntynyt tamma on kehittynyt vuosien varrella luotettavaksi opetushevoseksi, joka osaa käsitellä niin kokeneita kuin aloitteleviakin ratsastajia lempeällä ja kärsivällisellä tavalla.",
+      "Yleisesti: Minttu on luonteeltaan rauhallinen ja tasapainoinen tamma, joka suhtautuu kaikkeen tekemiseen positiivisella ja yhteistyöhaluisella asenteella. Se on erityisen kiintynyt ihmisiin ja nauttii huomiosta, mutta osaa myös käyttäytyä arvokkaasti ja pidättyväisesti tarvittaessa. Laumassa Minttu on sopeutuvainen ja ystävällinen, eikä aiheuta koskaan ongelmia muiden hevosten kanssa.",
+      "Ratsailla: Minttu loistaa erityisesti maastovaelluksilla ja tölttiharjoituksissa. Sen askellajit ovat puhtaat ja miellyttävät istua, erityisesti töltti on pehmeää ja tasaista. Pitkillä maastoreiteillä Mintun varmaotteisuus ja luotettavuus pääsevät todella oikeuksiinsa - se kulkee varmajalkaisesti vaikeissakin maastoissa ja pitää päänsä kylmänä kaikissa tilanteissa. Minttu soveltuu erinomaisesti myös askellajitunneille, missä se toimii kärsivällisesti ratsastajan taitotasosta riippumatta.",
+      "Hoidettaessa: Minttu on esimerkillisen helppo hoidettava. Se nauttii hoitotilanteista ja on erittäin yhteistyöhaluinen kaikissa toimenpiteissä. Harjaus ja kavioiden puhdistus sujuvat rutiinilla, ja Minttu seisoo aina rauhallisesti paikallaan varustettaessa. Se on tunnettu erityisesti siitä, miten hellästi se kohtelee nuorimpia ja kokemattomimpia hoitajiaan.",
+      "Kaiken kaikkiaan Minttu edustaa kaikkea sitä, mistä islanninhevoset tunnetaan: se on luotettava, monipuolinen ja miellyttävä käsitellä. Sen rauhallinen luonne ja varmat askellajit tekevät siitä ihanteellisen opetushevosen, erityisesti niille, jotka haluavat tutustua islanninhevosten erikoisaskellajeihin tai nauttia pitkistä maastoretkistä."
+  ],
+  "history": [
+      "Mintun tarina alkoi Islannista, missä se syntyi arvostetussa kasvattajalaumassa. Sen varhaiset vuodet kuluivat vapaana Islannin karuissa maisemissa, mikä kehitti siitä erityisen varmajalkaisen ja kestävän hevosen.",
+      "Kolmevuotiaana Minttu tuotiin Suomeen osana suurempaa islanninhevosryhmää. Sen poikkeuksellisen miellyttävä luonne ja puhtaat askellajit herättivät heti huomiota, ja se päätyi ensin yksityisomistukseen kokeneelle islanninhevosharrastajalle.",
+      "Yksityisomistuksessa Minttu sai perusteellisen koulutuksen kaikissa askellajeissa, ja sen kanssa kilpailtiin muutamissa aluekilpailuissa töltissä ja nelikäynnissä. Vaikka Minttu pärjäsi kilpailuissa hyvin, sen todellinen kutsumus oli selvästi rauhallisemmissa aktiviteeteissa.",
+      "Vuonna 2018 Minttu siirtyi Tammilehdon Ratsastuskeskukseen, kun sen edellinen omistaja muutti ulkomaille. Tammilehdossa Mintusta tuli nopeasti yksi suosituimmista tuntihevosista erityisesti vaellusratsastuksessa ja askellajitunneilla.",
+      "Nykyään Minttu on vakiinnuttanut asemansa yhtenä tallin luotettavimmista opetushevosista. Se on erityisen suosittu pitkillä maastoretkillä, missä sen varmaotteisuus ja mukava töltti pääsevät oikeuksiinsa. Minttu on myös erinomainen valinta ratsastajille, jotka haluavat tutustua islanninhevosten erikoisaskellajeihin.",
+      "Mintulla on erityinen taito saada ratsastajansa rentoutumaan ja nauttimaan ratsastuksesta. Sen lempeä luonne ja tasaiset askellajit ovat auttaneet monia ratsastajia voittamaan pelkojaan ja kehittymään ratsastajina."
+  ],
+  "pedigree": {
+      "father": "Eldur frá Höfðabrekku",
+      "mother": "Gróa frá Sauðárkróki",
+      "father_father": "Glampi frá Höfðabrekku",
+      "father_mother": "Perla frá Höfðabrekku",
+      "mother_father": "Týr frá Sauðárkróki",
+      "mother_mother": "Hera frá Sauðárkróki"
+  },
+  "competition_calendar": [
+  ],
+  "gallery": [
+      {
+          "filename": "img/minttu/minttu-rakenne.jpg",
+          "alt": "Mintun rakennekuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Mintun rakennekuva."
+      },
+      {
+          "filename": "img/minttu/minttu-maastossa.jpg",
+          "alt": "Minttu maastoretkellä",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Minttu nauttimassa maastoratsastuksesta keväisessä metsässä."
+      },
+      {
+          "filename": "img/minttu/minttu-talvella.jpg",
+          "alt": "Minttu talvella",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Minttu talvella laitumella."
+      },
+      {
+          "filename": "img/minttu/minttu-kisoissa.jpg",
+          "alt": "Minttu ratsastuskisoissa",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Minttu ratsastuskisoissa."
+      },
+      {
+          "filename": "img/minttu/minttu-paakuva.jpg",
+          "alt": "Mintun pääkuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Mintun virallinen pääkuva."
+      }
+  ]
+}

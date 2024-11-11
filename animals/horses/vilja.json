@@ -1,5 +1,5 @@
 {
-  "official_name": "Kukkakummun Vilja",
+  "official_name": "Kukkakummun Veikeä Ville",
   "nickname": "Vilja",
   "sex": "Ruuna",
   "birthdate": "2018-05-22",
@@ -51,16 +51,16 @@
           "description": "Vilja pienenä varsana."
       },
       {
-          "filename": "img/vilja/vilja-rapsutus.jpg",
-          "alt": "Viljaa rapsutellaan",
+          "filename": "img/vilja/vilja-nukkuu.jpg",
+          "alt": "Viljaa nukkuu laitumella",
           "copyright": "© AI, Tammilehdon Ratsastuskeskus",
-          "description": "Vilja nauttimassa rapsutuksista hoitopaikalla."
+          "description": "Vilja nukkuu laitumella."
       },
       {
           "filename": "img/vilja/vilja-paakuva.jpg",
           "alt": "Viljan pääkuva",
           "copyright": "© AI, Tammilehdon Ratsastuskeskus",
-          "description": "Viljan virallinen pääkuva."
+          "description": "Viljan pääkuva."
       }
   ]
 }
