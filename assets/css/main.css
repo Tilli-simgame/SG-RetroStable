@@ -118,7 +118,7 @@ h4 {
 }
 
 p, ul {
-  color: lightblue;
+  color: darkblue;
 }
 
 .content ul {
@@ -513,6 +513,27 @@ figcaption {
 .horse-special {
   font-style: italic;
   color: #ff6347;
+}
+
+.horse-image {
+  width: 100px;               /* Adjust the size as needed */
+  height: 100px;
+  border-radius: 50%;         /* Makes the image circular */
+  border: 5px solid;          /* Adds a border around the image */
+  object-fit: cover;          /* Ensures the image fills the circle without distortion */
+}
+
+/* Gender-based border color */
+.horse-card[data-sex="ori"] .horse-image { /* Stallion */
+  border-color: blue;
+}
+
+.horse-card[data-sex="tamma"] .horse-image { /* Mare */
+  border-color: red;
+}
+
+.horse-card[data-sex="ruuna"] .horse-image { /* Gelding */
+  border-color: yellow;
 }
 
 /* Tyhjennä nappi */
