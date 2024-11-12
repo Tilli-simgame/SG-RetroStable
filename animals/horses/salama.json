@@ -1,0 +1,73 @@
+{
+  "official_name": "Thunderbolting'n Very Frightening",
+  "nickname": "Salama",
+  "sex": "Ori",
+  "birthdate": "2014-04-28",
+  "color": "tummanruunikko",
+  "age": "10",
+  "breed": "Puoliverinen (Zangersheide)",
+  "description": "Herkkä ja tarkkaavainen, vaatii kokeneen ratsastajan. Salama on erittäin lahjakas kouluratsastuksessa, mutta sen herkkä luonne edellyttää ratsastajalta tarkkaa istuntaa ja pehmeitä apuja.",
+  "temperament": [
+      "Salama on vaikuttava puoliverinen ori, jonka ulkoinen eleganssi yhdistyy äärimmäisen herkkään ja reagoivaan luonteeseen. Tämä vuonna 2014 syntynyt ori edustaa klassista kouluratsutyyppiä, jossa yhdistyvät voimakas temperamentti ja poikkeuksellinen herkkyys. Salaman kanssa työskentely vaatii vankkaa hevosmiestaitoa ja kykyä lukea hevosen hienovaraisia eleitä.",
+      "Yleisesti: Salama on luonteeltaan tarkkaavainen ja valpas, tyypillinen ori joka tiedostaa ympäristönsä jatkuvasti. Se on perusluonteeltaan yhteistyöhaluinen, mutta vaatii käsittelijältään johdonmukaisuutta ja rauhallista varmuutta. Salama ei ole aggressiivinen, mutta sen vahva itsetunto ja herkkyys vaativat kunnioittavaa kohtelua. Se muodostaa vahvan siteen luotettaviin käsittelijöihinsä ja osoittaa heille poikkeuksellista uskollisuutta.",
+      "Ratsailla: Salaman ratsutus vaatii aina kokeneen ratsastajan. Sen herkkyys tekee siitä sekä haastavan että palkitsevan ratsukon - se reagoi pienimpiinkin apuihin ja tarjoaa taitavalle ratsastajalle uskomattoman hienon ratsastuskokemuksen. Kouluratsastuksessa Salama loistaa erityisesti koottujen liikkeiden ja sivuttaisliikkeiden parissa. Sen elastiset liikkeet ja luontainen kokoamiskyky tekevät siitä erinomaisen kilparatsun vaativalle tasolle. Maastossa Salama vaatii määrätietoisen ratsastajan, sillä sen tarkkaavainen luonne voi johtaa jännittymiseen uusissa tilanteissa.",
+      "Hoidettaessa: Salaman käsittely vaatii kokemusta ja ymmärrystä hevosten käyttäytymisestä. Se ei ole hankala käsitellä, mutta sen herkkyys tekee siitä haastavan kokemattomille. Salama arvostaa rutiineja ja selkeää kommunikaatiota. Tuttujen hoitajien kanssa se on yhteistyöhaluinen ja miellyttävä käsitellä. Se nauttii erityisesti harjauksesta ja huomiosta, kunhan sitä lähestytään rauhallisesti ja kunnioittavasti.",
+      "Kaiken kaikkiaan Salama on tyypillinen esimerkki korkealuokkaisesta urheiluhevosesta, jonka kanssa työskentely vaatii vankkaa osaamista mutta palkitsee sitäkin enemmän. Sen herkkyys ja älykkyys tekevät siitä haastavan mutta samalla äärimmäisen palkitsevan kumppanin kokeneelle ratsastajalle."
+  ],
+  "history": [
+        "Salama syntyi arvostetussa Gestüt Donnerschlag -siittolassa Celle-Hannoverissa, Saksassa. Siittola on tunnettu erityisesti korkealaatuisista kouluratsastukseen suuntautuneista jalostushevosistaan. Salaman isä Thunder McFlash oli menestynyt Intermediaire I -tasolla Helen Langehanenbergin ratsastamana, ja emä Blitzkrieg Ballerina puolestaan kilpaili Prix St. Georges -tasolla Isabell Werthin tallissa ennen siirtymistään jalostuskäyttöön.",
+
+        "Varsan poikkeuksellinen laatu huomattiin siittolassa varhain. Salaman liikkeiden elastisuus ja luontainen kyky koota itsensä herättivät huomiota jo nuorissa ikäluokkakilpailuissa Verdessä. Oriin koulutuksesta vastasi aluksi nuorten hevosten kouluttamiseen erikoistunut Herr Klaus Weber, joka tunsi erityisen hyvin herkempien hevosten käsittelyn.",
+
+        "Salaman varhainen koulutus toteutettiin perinteisen saksalaisen koulukunnan mukaisesti, keskittyen vahvan perustan luomiseen. Sen luontainen herkkyys ja reaktiivisuus vaativat erityistä kärsivällisyyttä, mutta samalla nämä ominaisuudet tekivät siitä poikkeuksellisen lahjakaan kouluratsukon. Bundeschampionaatissa 3-vuotiaana se sijoittui lupaavasti viidenneksi.",
+
+        "Kilpailu-uransa Salama aloitti 6-vuotiaana nuorten hevosten luokissa Saksassa, missä se menestyi erityisesti Verden Nürnberger Burgpokal -sarjassa. Sen kilpailumenestys herätti kiinnostusta myös Suomessa, ja vuonna 2022 Tammilehdon Ratsastuskeskus onnistui hankkimaan tämän lupaavan oriin Suomeen kokeneiden kilparatsastajien ja edistyneiden oppilaiden käyttöön.",
+
+        "Tammilehdossa Salama on jatkanut kehitystään kohti Grand Prix -tasoa. Se kilpailee nykyään menestyksellä Vaativa A -tasolla, ja sen vahvuuksia ovat erityisesti passage, piaffe ja sarjavaihdot. Vaikka ori on haastava ratsastettava, sen herkkyys tekee siitä erinomaisen opettajan kokeneemmille ratsastajille - Salaman kanssa työskentely kehittää väistämättä ratsastajan istuntaa ja apujen käyttöä yhä tarkemmaksi.",
+
+        "Nykyään Salama on yksi Tammilehdon arvostetuimmista kilparatsuista. Sen saksalainen koulutuspohja ja poikkeuksellinen herkkyys tekevät siitä ihanteellisen kumppanin tavoitteellisille kouluratsastajille. Tulevaisuudessa Salamaa tullaan näkemään yhä vaativammissa luokissa, ja sen odotetaan debutoivan Grand Prix -tasolla lähitulevaisuudessa."
+    ],
+  "pedigree": {
+        "father": "Thunder McFlash",
+        "mother": "Blitzkrieg Ballerina",
+        "father_father": "Sir Zappington the Third",
+        "father_mother": "Dancing Queen von Sparkles",
+        "mother_father": "Lord Flashheart's Revenge",
+        "mother_mother": "Elektra Shock und Awe"
+    },
+  "competition_calendar": [
+      
+  ],
+  "gallery": [
+      {
+          "filename": "img/salama/salama-rakenne.jpg",
+          "alt": "Salaman rakennekuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Salaman rakennekuva."
+      },
+      {
+          "filename": "img/salama/salama-tunnilla.jpg",
+          "alt": "Salama ratsastustunnilla",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Salama ratsastustunnilla."
+      },
+      {
+          "filename": "img/salama/salama-varsana.jpg",
+          "alt": "Salama varsana",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Salama varsana vielä asustaessaan Saksassa."
+      },
+      {
+          "filename": "img/salama/salama-temppuilee.jpg",
+          "alt": "Salama temppuilee",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Salama esittelee vapaana taitojaan."
+      },
+      {
+          "filename": "img/salama/salama-paakuva.jpg",
+          "alt": "Salamam pääkuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Salaman pääkuva."
+      }
+  ]
+}
