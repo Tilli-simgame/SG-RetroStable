@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: Tilli-simgame/SG-RetroStable
+  branch: main # Or your default branch
+  base_url: https://lehmuskartanon-ratsastuskeskus.anniina-sipria.workers.dev # We will replace this later
+  auth_endpoint: auth
+
+media_folder: "animals/horses/img" # Folder where images will be stored
+public_folder: "animals/horses/img" # How they are referenced in JSON
+
+collections:
+  - name: "horses"
+    label: "Hevoset"
+    folder: "animals/horses"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{nickname}}"
+    fields:
+      - { label: "Virallinen nimi", name: "official_name", widget: "string" }
+      - { label: "Kutsumanimi", name: "nickname", widget: "string" }
+      - { label: "Sukupuoli", name: "sex", widget: "select", options: ["Tamma", "Ori", "Ruuna"] }
+      - { label: "Syntymäaika", name: "birthdate", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Väri", name: "color", widget: "string" }
+      - { label: "Ikä", name: "age", widget: "string" }
+      - { label: "Rotu", name: "breed", widget: "string" }
+      - { label: "Lyhyesti", name: "description", widget: "text" }
+      - label: "Luonnekuvaus"
+        name: "temperament"
+        widget: "list"
+        summary: "{{fields.paragraph}}"
+        field: { label: "Kappale", name: "paragraph", widget: "text" }
+      - label: "Historia"
+        name: "history"
+        widget: "list"
+        summary: "{{fields.paragraph}}"
+        field: { label: "Kappale", name: "paragraph", widget: "text" }
+      - label: "Suku"
+        name: "pedigree"
+        widget: "object"
+        fields:
+          - { label: "Isä", name: "father", widget: "string" }
+          - { label: "Emä", name: "mother", widget: "string" }
+          - { label: "Isän Isä", name: "father_father", widget: "string" }
+          - { label: "Isän Emä", name: "father_mother", widget: "string" }
+          - { label: "Emän Isä", name: "mother_father", widget: "string" }
+          - { label: "Emän Emä", name: "mother_mother", widget: "string" }
+      - label: "Kilpailukalenteri"
+        name: "competition_calendar"
+        widget: "list"
+        fields:
+          - { label: "Päivämäärä", name: "date", widget: "string" }
+          - { label: "Luokka", name: "class", widget: "string" }
+          - { label: "Paikka", name: "place", widget: "string" }
+          - { label: "Sijoitus", name: "placement", widget: "string" }
+      - label: "Kuvagalleria"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - { label: "Kuva", name: "filename", widget: "image" }
+          - { label: "Alt-teksti", name: "alt", widget: "string" }
+          - { label: "Tekijänoikeus", name: "copyright", widget: "string" }
+          - { label: "Kuvaus", name: "description", widget: "string" }

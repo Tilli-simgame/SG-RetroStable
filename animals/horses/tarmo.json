@@ -1,0 +1,66 @@
+{
+  "official_name": "Greenfield's Thunder",
+  "nickname": "Tarmo",
+  "sex": "ruuna",
+  "birthdate": "2015-03-10",
+  "color": "rautias",
+  "age": "9",
+  "breed": "Irlannincob",
+  "description": "Tasainen ja energinen esteillä, hyvä kenttäratsastuksessa. Tarmo on luotettava kilpakumppani, joka yhdistää irlannincobille tyypillisen rauhallisuuden ja vahvan hyppykyvyn.",
+  "temperament": [
+      "Tarmo on vaikuttava irlannincob-ruuna, joka on osoittautunut monipuoliseksi lahjakkuudeksi niin este- kuin kenttäratsastuksessa. Rodulleen tyypillisesti se on rauhallinen ja harkitseva, mutta radalla sen energisyys ja urheilullisuus tulevat esiin. Tarmon vahvuus on sen kyky säilyttää malttinsa haastavissakin tilanteissa, mikä tekee siitä erinomaisen kilpakumppanin.",
+      "Yleisesti: Tarmo edustaa irlannincobien parhaita ominaisuuksia: se on älykäs, yhteistyöhaluinen ja tasapainoinen hevonen. Laumassa se on rauhallinen ja ystävällinen, eikä aiheuta koskaan ongelmia. Sen itsevarma olemus ja vakaa luonne tekevät siitä helposti lähestyttävän, vaikka koko onkin vaikuttava. Tarmo on erityisen kiintynyt nuoriin hevosiin ja toimii usein rauhoittavana 'isoveljenä' levottomammille tallikavereille.",
+      "Ratsailla: Kenttäratsastuksessa Tarmon vahvuudet tulevat parhaiten esiin. Se on maastoesteillä rohkea ja varmajalkainen, kouluosuuksissa keskittynyt ja tarkka. Esteillä Tarmo on energinen mutta hallittu - se arvioi esteet tarkasti ja hyppää tehokkaasti. Kouluratsastuksessa se osoittaa hyvää kokoamiskykyä ja tarkkuutta. Kenttäkilpailuissa Tarmon vahvuus on sen kyky säilyttää energia läpi koko kilpailun, erityisesti maasto-osuudella sen kestävyys on ihailtavaa.",
+      "Hoidettaessa: Tallissa Tarmo on esimerkillisen rauhallinen ja miellyttävä käsitellä. Se antaa hoitaa kaikki toimenpiteet kärsivällisesti ja seisoo mallikkaasti paikallaan. Kengitykset ja eläinlääkärin käynnit sujuvat ongelmitta. Tarmo nauttii erityisesti harjaamisesta ja hieronnasta, ja osoittaa kiitollisuutensa lempeillä eleillä.",
+      "Kaiken kaikkiaan Tarmo on upea esimerkki siitä, miten irlannincob voi menestyä urheiluhevosena. Sen rauhallinen luonne yhdistettynä urheilullisiin kykyihin tekee siitä arvokkaan jäsenen tallissa, oli kyse sitten kilpailuista tai tavallisista ratsastustunneista."
+  ],
+  "history": [
+      "Tarmo syntyi Irlannissa arvostetussa irlannincobeja kasvattavassa tallissa. Sen isä oli menestynyt kenttäratsastuksessa, ja emä tunnettiin erinomaisena ratsuponina. Jo varsana Tarmossa näkyi lupauksia urheiluhevoseksi - se oli rohkea ja utelias, mutta samalla rauhallinen ja helppo käsitellä.",
+      "Nuorena hevosena Tarmo tuotiin Suomeen osana irlantilaisen kasvattajan ja suomalaisen maahantuojan yhteistyötä. Alusta asti oli selvää, että Tarmosta haluttiin kehittää kilpahevonen. Sen koulutus aloitettiin maltillisesti, keskittyen ensin vahvan pohjakoulutuksen rakentamiseen.",
+      "Tarmon potentiaali kenttäratsastuksessa huomattiin pian, kun se osoitti erityistä lahjakkuutta niin maastoesteillä kuin kouluratsastuksessakin. Sen vahva hyppy ja kestävyys maasto-osuuksilla herättivät huomiota, ja pian se aloittikin kilpailu-uransa kenttäratsastuksen harrasteluokissa.",
+      "Tammilehdon Ratsastuskeskukseen Tarmo päätyi kolme vuotta sitten, kun sen edellinen omistaja joutui luopumaan kilpaurasta. Tarmossa nähtiin potentiaalia sekä kilpa- että opetushevosena, ja sen monipuolisuus on osoittautunut arvokkaaksi.",
+      "Nykyään Tarmo kilpailee säännöllisesti kenttäratsastuksessa ja toimii myös opetushevosena edistyneemmille ratsastajille. Se on erityisen suosittu niiden ratsastajien keskuudessa, jotka haluavat kehittyä kenttäratsastuksessa, sillä sen vakaa luonne tekee siitä erinomaisen opettajan."
+  ],
+  "pedigree": {
+      "father": "Greenfield's Storm",
+      "mother": "Cloverhill Rose",
+      "father_father": "Celtic Thunder",
+      "father_mother": "Greenfield's Lady",
+      "mother_father": "Cloverhill Prince",
+      "mother_mother": "Rosebud of Kerry"
+  },
+  "competition_calendar": [
+  ],
+  "gallery": [
+      {
+          "filename": "img/tarmo/tarmo-rakenne.jpg",
+          "alt": "Tarmon rakennekuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Tarmon rakennekuva."
+      },
+      {
+          "filename": "img/tarmo/tarmo-ratsastustunnilla.jpg",
+          "alt": "Tarmo ratsastustunnilla",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Tarmo ratsastustunnilla."
+      },
+      {
+          "filename": "img/tarmo/tarmo-tallissa.jpg",
+          "alt": "Tarmo tallissa",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Tarmo rauhallisena karsinassaan."
+      },
+      {
+          "filename": "img/tarmo/tarmo-laidun.jpg",
+          "alt": "Tarmo laitumella",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Tarmo nauttimassa kesäpäivästä laitumella."
+      },
+      {
+          "filename": "img/tarmo/tarmo-paakuva.jpg",
+          "alt": "Tarmon pääkuva",
+          "copyright": "© AI, Tammilehdon Ratsastuskeskus",
+          "description": "Tarmon virallinen pääkuva."
+      }
+  ]
+}
