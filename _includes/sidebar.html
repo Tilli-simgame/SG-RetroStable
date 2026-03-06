@@ -1,0 +1,117 @@
+<div class="position-sticky pt-3">
+    <ul class="nav flex-column">
+        <!-- Pääsivu -->
+        <li class="nav-item">
+            <a class="nav-link nav-heading active" href="{{ '/' | relative_url }}">Pääsivu</a>
+        </li>
+
+        <!-- Yleistä tallista -->
+        <li class="nav-item">
+            <a class="nav-link nav-heading" href="#yleistaTallistaSubmenu" data-bs-toggle="collapse"
+                aria-expanded="false">Yleistä tallista</a>
+            <ul class="collapse show nav flex-column ms-3" id="yleistaTallistaSubmenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/henkilokunta/' | relative_url }}">Henkilökunta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/tarhaus/' | relative_url }}">Tarhaus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/pohjapiirrokset/' | relative_url }}">Pohjapiirrokset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/paivaohjelma/' | relative_url }}">Päiväohjelma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/muut-elaimet/' | relative_url }}">Muut eläimet</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Hevoset -->
+        <li class="nav-item">
+            <a class="nav-link nav-heading" href="#hevosetSubmenu" data-bs-toggle="collapse"
+                aria-expanded="false">Hevoset</a>
+            <ul class="collapse show nav flex-column ms-3" id="hevosetSubmenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/hevoset/' | relative_url }}">Tallin hevoset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/yksityiset-hevoset/' | relative_url }}">Yksityiset hevoset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/kasvatit/' | relative_url }}">Tallin kasvatit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/myytavat-hevoset/' | relative_url }}">Myytävät hevoset</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Tallin toimintaa -->
+        <li class="nav-item">
+            <a class="nav-link nav-heading" href="#toimintaSubmenu" data-bs-toggle="collapse"
+                aria-expanded="false">Tallin toimintaa</a>
+            <ul class="collapse show nav flex-column ms-3" id="toimintaSubmenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/ratsastustunnit/' | relative_url }}">Ratsastustunnit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/leiritjavaellukset/' | relative_url }}">Leirit ja vaellukset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/kilpailut/' | relative_url }}">Kilpailut</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Hoitajat ja työntekijät -->
+        <li class="nav-item">
+            <a class="nav-link nav-heading" href="#hoitajatSubmenu" data-bs-toggle="collapse"
+                aria-expanded="false">Hoitajat ja työntekijät</a>
+            <ul class="collapse show nav flex-column ms-3" id="hoitajatSubmenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/hoitajatjatehtavat/' | relative_url }}">Hoitajat ja tehtävät</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/hoitopaivakirjat/' | relative_url }}">Hoitopäiväkirjat</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Muut tallin toiminnot -->
+        <li class="nav-item">
+            <a class="nav-link nav-heading" href="#muutToiminnotSubmenu" data-bs-toggle="collapse"
+                aria-expanded="false">Muut tallin toiminnot</a>
+            <ul class="collapse show nav flex-column ms-3" id="muutToiminnotSubmenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/laidunjarjestykset/' | relative_url }}">Laidunjärjestykset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/karsinajarjestykset/' | relative_url }}">Karsinajärjestykset</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Muuta tärkeää -->
+        <li class="nav-item">
+            <a class="nav-link nav-heading" href="#tarkeaaSubmenu" data-bs-toggle="collapse" aria-expanded="false">Muuta
+                tärkeää</a>
+            <ul class="collapse show nav flex-column ms-3" id="tarkeaaSubmenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/ystavyystallit/' | relative_url }}">Ystävyystallit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/omistajan-paivakirja/' | relative_url }}">Tallin omistajan
+                        päiväkirja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/vieraskirja/' | relative_url }}">Vieraskirja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ '/ilmoitustaulu/' | relative_url }}">Ilmoitustaulu</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

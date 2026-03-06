@@ -1,0 +1,38 @@
+title: Lehmuskartanon Ratsastuskeskus
+email: tilli@proton.me
+description: >- # this means to ignore newlines until "baseurl:"
+  Virtuaalitalli Lehmuskartanon Ratsastuskeskus tarjoaa monipuolista ratsastustoimintaa.
+baseurl: "/SG-RetroStable" # the subpath of your site, e.g. /blog
+url: "https://tilli-simgame.github.io" # the base hostname & protocol for your site
+
+collections:
+  horses:
+    output: true
+    permalink: /hevoset/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "horses"
+    values:
+      layout: "horse"
+
+# Build settings
+theme: minima # You can keep minima or use none and build your own
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude` key here will be ignored, even if it is in a subdirectory...
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,22 +1,23 @@
 backend:
   name: github
   repo: Tilli-simgame/SG-RetroStable
-  branch: main # Or your default branch
-  base_url: lehmuskartanon-ratsastuskeskus.anniina-sipria.workers.dev # We will replace this later
+  branch: main
+  base_url: https://lehmuskartanon-ratsastuskeskus.anniina-sipria.workers.dev
   auth_endpoint: auth
 
-media_folder: "animals/horses/img" # Folder where images will be stored
-public_folder: "animals/horses/img" # How they are referenced in JSON
+media_folder: "animals/horses/img"
+public_folder: "animals/horses/img"
 
 collections:
   - name: "horses"
     label: "Hevoset"
-    folder: "animals/horses"
-    extension: "json"
-    format: "json"
+    folder: "_horses"
+    extension: "md"
+    format: "yml-frontmatter"
     create: true
     slug: "{{nickname}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "horse" }
       - { label: "Virallinen nimi", name: "official_name", widget: "string" }
       - { label: "Kutsumanimi", name: "nickname", widget: "string" }
       - { label: "Sukupuoli", name: "sex", widget: "select", options: ["Tamma", "Ori", "Ruuna"] }

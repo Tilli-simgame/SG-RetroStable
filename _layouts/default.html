@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/97ee02d098.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar">
+            {% include sidebar.html %}
+        </nav>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Navbar (visible only on mobile) -->
+            <nav class="navbar navbar-expand-md navbar-light bg-light d-md-none fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar-mobile" aria-controls="sidebar-mobile" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="sidebar-mobile">
+                        {% include sidebar.html %}
+                    </div>
+                </div>
+            </nav>
+            <div class="content-overlay">
+                <div class="content">
+                    {{ content }}
+                </div>
+                <div>
+                    <p>!! Tämä on virtuaalitalli !!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple mobile toggle if bootstrap collapse isn't enough
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

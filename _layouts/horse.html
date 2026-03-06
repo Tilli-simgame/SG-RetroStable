@@ -1,0 +1,108 @@
+---
+layout: default
+---
+<div class="profile-content">
+    <h1 id="nickname">{{ page.nickname }}</h1>
+    <div class="profile-info">
+        <figure>
+            <img id="profile-image" src="{{ page.gallery[0].filename | relative_url }}" alt="Hevosen kuva"
+                height="300px" />
+            <figcaption><span id="profile-image-copy">{{ page.gallery[0].copyright }}</span></figcaption>
+        </figure>
+        <div class="profile-details">
+            <p><strong>Virallinen nimi:</strong> <span id="official-name">{{ page.official_name }}</span></p>
+            <p><strong>Kutsumanimi:</strong> <span id="nickname-text">{{ page.nickname }}</span></p>
+            <p><strong>Sukupuoli:</strong> <span id="sex">{{ page.sex }}</span></p>
+            <p><strong>Väri:</strong> <span id="color">{{ page.color }}</span></p>
+            <p><strong>Syntymäaika:</strong> <span id="birthdate">{{ page.birthdate }}</span> (<span id="age">{{
+                    page.age }}</span>)</p>
+            <p><strong>Rotu:</strong> <span id="breed">{{ page.breed }}</span></p>
+            <p><strong>Suku:</strong> <span id="father">{{ page.pedigree.father }}</span> x <span id="mother">{{
+                    page.pedigree.mother }}</span></p>
+            <p><strong>Lyhyesti:</strong> <span id="description">{{ page.description }}</span></p>
+        </div>
+    </div>
+
+    <h2>Historia</h2>
+    <div id="history-description">
+        {% for paragraph in page.history %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="custom-hr-heart"></div>
+
+    <h2>Kuvagalleria</h2>
+    <div class="gallery" id="gallery">
+        {% for image in page.gallery %}
+        <figure>
+            <img src="{{ image.filename | relative_url }}" alt="{{ image.alt }}" class="img-thumbnail"
+                data-bs-toggle="modal" data-bs-target="#imageModal"
+                onclick="updateModal('{{ image.filename | relative_url }}', '{{ image.description }}', '{{ image.copyright }}')">
+            <figcaption>{{ image.alt }} - {{ image.copyright }}</figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+
+    <!-- Modal structure with Bootstrap -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-image img-fluid" id="modalImage" alt="Kuva">
+                    <div class="modal-caption text-center mt-2" id="modalCaption"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateModal(src, description, copyright) {
+            document.getElementById('modalImage').src = src;
+            document.getElementById('modalCaption').innerHTML = `<p>${description}</p><p>${copyright}</p>`;
+        }
+    </script>
+
+    <h2>Luonnekuvaus</h2>
+    <div class="long-description">
+        <div id="temperament-description">
+            {% for paragraph in page.temperament %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="custom-hr-heart"></div>
+
+    <h2>Kilpailukalenteri</h2>
+    <div class="competition-calendar">
+        <div class="competition-header">
+            <div class="header-cell">Päivämäärä</div>
+            <div class="header-cell">Luokka</div>
+            <div class="header-cell">Paikka</div>
+            <div class="header-cell">Sijoitus</div>
+        </div>
+        <div id="competition-calendar">
+            {% for event in page.competition_calendar %}
+            <div class="competition-row">
+                <div class="cell">{{ event.date }}</div>
+                <div class="cell">{{ event.class }}</div>
+                <div class="cell">{{ event.place }}</div>
+                <div class="cell">{{ event.placement }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <h2>Päiväkirja</h2>
+    <div class="horse-diary" id="utterances-container">
+        <!-- Utterances script will be added here -->
+    </div>
+
+    <script src="https://utteranc.es/client.js" repo="Tilli-simgame/SG-RetroStable-Diaries"
+        issue-term="{{ page.nickname }}" theme="github-light" crossorigin="anonymous" async>
+        </script>
+</div>
